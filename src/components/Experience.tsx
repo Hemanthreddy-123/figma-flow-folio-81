@@ -35,9 +35,9 @@ export const Experience = () => {
   ];
 
   const education = {
-    degree: "B.Tech (Computer Science)",
+    degree: "B.Tech (Computer Science and Engineering)",
     institution: "Audisankara College",
-    period: "2022 - present",
+    period: "2022 - 2026",
     cgpa: "7.69/10",
     previous: [
       { level: "Class 12th", institution: "Board of Intermediate Education", marks: "577/1000", year: "2021-2022" },

@@ -11,14 +11,14 @@ export const About = () => {
             About <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            B.Tech Computer Science student passionate about AI and cutting-edge technology
+            B.Tech Computer Science and Engineering student passionate about AI and cutting-edge technology
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg leading-relaxed text-muted-foreground">
-              I'm currently pursuing B.Tech in Computer Science at Audisankara College with a strong focus on 
+              I'm currently pursuing B.Tech in Computer Science and Engineering at Audisankara College with a strong focus on 
               Artificial Intelligence and Machine Learning. My passion lies in developing innovative solutions 
               that bridge the gap between cutting-edge AI technology and real-world applications.
             </p>
@@ -58,7 +58,7 @@ export const About = () => {
             
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">2024</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">2026</div>
                 <div className="text-sm text-muted-foreground">Graduation Year</div>
               </CardContent>
             </Card>

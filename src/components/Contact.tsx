@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -68,7 +67,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold">Phone</div>
-                  <div className="text-muted-foreground">9347591702</div>
+                  <div className="text-muted-foreground">8790026979</div>
                 </div>
               </div>
 
