@@ -5,62 +5,63 @@ import { Badge } from "@/components/ui/badge";
 export const Experience = () => {
   const experiences = [
     {
-      title: "Senior Full-Stack Developer",
-      company: "TechCorp Solutions",
-      period: "2022 - Present",
-      location: "San Francisco, CA",
-      description: "Led development of enterprise web applications serving 100k+ users. Architected scalable microservices and mentored junior developers.",
-      technologies: ["React", "Node.js", "PostgreSQL", "AWS", "Docker"],
+      title: "Artificial Intelligence Intern",
+      company: "Edunet - AICTE",
+      period: "Nov 2024 - Dec 2024",
+      location: "Remote",
+      description: "Designed and developed an AI-based Attendance Management System using facial recognition for real-time, automated attendance tracking.",
+      technologies: ["Python", "OpenCV", "Machine Learning", "Face Recognition", "Real-time Processing"],
       achievements: [
-        "Reduced application load time by 40%",
-        "Led team of 5 developers",
-        "Implemented CI/CD pipeline reducing deployment time by 60%"
+        "Developed facial recognition system with high accuracy",
+        "Applied Python, OpenCV, and ML techniques for enhanced recognition",
+        "Trained and fine-tuned models for diverse lighting and facial variations",
+        "Integrated face detection, preprocessing, and real-time camera input handling"
       ]
     },
     {
-      title: "Frontend Developer",
-      company: "Digital Agency Pro",
-      period: "2020 - 2022",
-      location: "New York, NY",
-      description: "Developed responsive web applications and collaborated with design teams to create pixel-perfect user interfaces.",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Figma"],
+      title: "Intern / Project Trainee",
+      company: "VALUELADIES",
+      period: "Jan 2024 - Feb 2024",
+      location: "Hybrid",
+      description: "Developed a real-time College Bus Tracking System with user-friendly interface for students and staff, featuring GPS-based tracking and interactive mapping.",
+      technologies: ["Web Development", "GPS Integration", "Real-time Systems", "Interactive Maps", "Responsive Design"],
       achievements: [
-        "Delivered 20+ client projects on time",
-        "Improved user engagement by 35%",
-        "Established design system used across all projects"
-      ]
-    },
-    {
-      title: "Junior Web Developer",
-      company: "StartupXYZ",
-      period: "2019 - 2020",
-      location: "Austin, TX",
-      description: "Built and maintained web applications using modern JavaScript frameworks and collaborated in an agile environment.",
-      technologies: ["JavaScript", "Vue.js", "Python", "MongoDB"],
-      achievements: [
-        "Contributed to MVP that secured $2M funding",
-        "Improved code quality through testing implementation",
-        "Reduced bug reports by 50%"
+        "Built real-time bus tracking system with live location updates",
+        "Integrated GPS-based tracking for accurate positioning",
+        "Ensured cross-platform compatibility and responsive design",
+        "Enhanced commuter experience by reducing waiting time and improving route visibility"
       ]
     }
   ];
+
+  const education = {
+    degree: "B.Tech (Computer Science)",
+    institution: "Audisankara College",
+    period: "2022 - present",
+    cgpa: "7.69/10",
+    previous: [
+      { level: "Class 12th", institution: "Board of Intermediate Education", marks: "577/1000", year: "2021-2022" },
+      { level: "Class 10th", institution: "Secondary School of Education", marks: "519/600", year: "2019-2020" }
+    ]
+  };
 
   return (
     <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            Work <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Experience</span>
+            Experience & <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Education</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            My professional journey and key contributions
+            My professional journey and academic achievements
           </p>
         </div>
 
-        <div className="space-y-8">
+        {/* Work Experience */}
+        <div className="space-y-8 mb-16">
+          <h3 className="text-2xl font-bold mb-6">Work Experience</h3>
           {experiences.map((exp, index) => (
             <Card key={index} className="hover:shadow-lg transition-all duration-300 relative overflow-hidden">
-              {/* Timeline indicator */}
               <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-600 to-purple-600"></div>
               
               <CardHeader className="ml-4">
@@ -103,6 +104,47 @@ export const Experience = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Education */}
+        <div>
+          <h3 className="text-2xl font-bold mb-6">Education</h3>
+          <Card className="hover:shadow-lg transition-all duration-300 relative overflow-hidden">
+            <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-green-600 to-blue-600"></div>
+            
+            <CardHeader className="ml-4">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                <div>
+                  <CardTitle className="text-xl mb-1">{education.degree}</CardTitle>
+                  <div className="text-lg font-semibold text-green-600">{education.institution}</div>
+                </div>
+                <div className="text-right">
+                  <div className="text-sm font-medium">{education.period}</div>
+                  <div className="text-sm text-muted-foreground">CGPA: {education.cgpa}</div>
+                </div>
+              </div>
+            </CardHeader>
+            
+            <CardContent className="ml-4 space-y-4">
+              <div>
+                <h4 className="font-semibold mb-2">Previous Education:</h4>
+                <div className="space-y-2">
+                  {education.previous.map((edu, i) => (
+                    <div key={i} className="flex justify-between items-center p-2 bg-muted/50 rounded">
+                      <div>
+                        <div className="font-medium">{edu.level}</div>
+                        <div className="text-sm text-muted-foreground">{edu.institution}</div>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-sm font-medium">Marks: {edu.marks}</div>
+                        <div className="text-sm text-muted-foreground">{edu.year}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

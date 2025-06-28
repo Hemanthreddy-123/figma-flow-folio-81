@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Linkedin, Github } from "lucide-react";
 import { useState } from "react";
 
 export const Contact = () => {
@@ -35,7 +35,7 @@ export const Contact = () => {
             Get In <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Let's discuss your next project and bring your ideas to life
+            Let's discuss opportunities, projects, or collaborations in AI and technology
           </p>
         </div>
 
@@ -45,9 +45,9 @@ export const Contact = () => {
             <div>
               <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                I'm always interested in new opportunities and exciting projects. 
-                Whether you have an idea you'd like to discuss or just want to say hello, 
-                feel free to reach out!
+                I'm always interested in new opportunities, exciting projects, and collaborations 
+                in AI, machine learning, and web development. Whether you have an internship 
+                opportunity, project idea, or just want to discuss technology, feel free to reach out!
               </p>
             </div>
 
@@ -58,7 +58,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold">Email</div>
-                  <div className="text-muted-foreground">alex@example.com</div>
+                  <div className="text-muted-foreground">Hemanth.Reddy@example.com</div>
                 </div>
               </div>
 
@@ -68,7 +68,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold">Phone</div>
-                  <div className="text-muted-foreground">+1 (555) 123-4567</div>
+                  <div className="text-muted-foreground">9347591702</div>
                 </div>
               </div>
 
@@ -78,7 +78,17 @@ export const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold">Location</div>
-                  <div className="text-muted-foreground">San Francisco, CA</div>
+                  <div className="text-muted-foreground">Andhra Pradesh, India</div>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-orange-100 dark:bg-orange-900/20 rounded-lg flex items-center justify-center">
+                  <Linkedin className="text-orange-600" size={20} />
+                </div>
+                <div>
+                  <div className="font-semibold">LinkedIn</div>
+                  <div className="text-muted-foreground">Hemanth Reddy</div>
                 </div>
               </div>
             </div>
@@ -86,8 +96,8 @@ export const Contact = () => {
             <div className="pt-8">
               <h4 className="font-semibold mb-4">Response Time</h4>
               <p className="text-muted-foreground">
-                I typically respond to messages within 24 hours. For urgent inquiries, 
-                please call or mention "urgent" in your subject line.
+                I typically respond to messages within 24 hours. For urgent inquiries regarding 
+                internships or collaboration opportunities, please mention "urgent" in your subject line.
               </p>
             </div>
           </div>
@@ -109,7 +119,7 @@ export const Contact = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="John Doe"
+                      placeholder="Your Name"
                       required
                       className="w-full"
                     />
@@ -124,7 +134,7 @@ export const Contact = () => {
                       type="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="john@example.com"
+                      placeholder="your@example.com"
                       required
                       className="w-full"
                     />
@@ -140,7 +150,7 @@ export const Contact = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    placeholder="Project Discussion"
+                    placeholder="Internship Opportunity / Project Collaboration"
                     required
                     className="w-full"
                   />
@@ -155,7 +165,7 @@ export const Contact = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Tell me about your project..."
+                    placeholder="Tell me about the opportunity or project..."
                     required
                     className="w-full min-h-[120px]"
                   />

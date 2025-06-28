@@ -11,28 +11,28 @@ export const About = () => {
             About <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Passionate about creating exceptional digital experiences through code and design
+            B.Tech Computer Science student passionate about AI and cutting-edge technology
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg leading-relaxed text-muted-foreground">
-              I'm a full-stack developer with 5+ years of experience in creating modern web applications. 
-              My journey began with a passion for design, which naturally evolved into development when I 
-              discovered the power of bringing beautiful interfaces to life through code.
+              I'm currently pursuing B.Tech in Computer Science at Audisankara College with a strong focus on 
+              Artificial Intelligence and Machine Learning. My passion lies in developing innovative solutions 
+              that bridge the gap between cutting-edge AI technology and real-world applications.
             </p>
             
             <p className="text-lg leading-relaxed text-muted-foreground">
-              I specialize in React, TypeScript, and modern web technologies, with a keen eye for user 
-              experience and performance optimization. When I'm not coding, you'll find me exploring 
-              new design trends or contributing to open-source projects.
+              With hands-on experience in facial recognition systems, automated attendance management, and 
+              real-time tracking applications, I specialize in creating user-friendly interfaces that make 
+              complex technology accessible to everyone.
             </p>
 
             <div className="space-y-4">
               <h3 className="text-xl font-semibold">What I Do</h3>
               <div className="flex flex-wrap gap-2">
-                {["Frontend Development", "UI/UX Design", "Backend Development", "Mobile Development", "DevOps", "Consulting"].map((skill) => (
+                {["AI Development", "Machine Learning", "Web Development", "Automation", "Data Analysis", "System Design"].map((skill) => (
                   <Badge key={skill} variant="secondary" className="px-3 py-1">
                     {skill}
                   </Badge>
@@ -44,29 +44,29 @@ export const About = () => {
           <div className="grid grid-cols-2 gap-6">
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
-                <div className="text-sm text-muted-foreground">Projects Completed</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">7.69</div>
+                <div className="text-sm text-muted-foreground">Current CGPA</div>
               </CardContent>
             </Card>
             
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">5+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">3+</div>
+                <div className="text-sm text-muted-foreground">Major Projects</div>
               </CardContent>
             </Card>
             
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">30+</div>
-                <div className="text-sm text-muted-foreground">Happy Clients</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">2024</div>
+                <div className="text-sm text-muted-foreground">Graduation Year</div>
               </CardContent>
             </Card>
             
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
-                <div className="text-3xl font-bold text-orange-600 mb-2">24/7</div>
-                <div className="text-sm text-muted-foreground">Support</div>
+                <div className="text-3xl font-bold text-orange-600 mb-2">AI/ML</div>
+                <div className="text-sm text-muted-foreground">Specialization</div>
               </CardContent>
             </Card>
           </div>

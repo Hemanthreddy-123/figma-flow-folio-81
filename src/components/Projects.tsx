@@ -7,64 +7,52 @@ import { ExternalLink, Github } from "lucide-react";
 export const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with advanced features including real-time inventory, payment processing, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Docker"],
-      features: ["Real-time inventory", "Payment integration", "Admin dashboard", "Order tracking"],
+      title: "AI-Based Attendance Management System",
+      description: "Developed an automated web-based attendance system using facial recognition to reduce manual tracking errors and save time with real-time data updates.",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+      technologies: ["Python", "OpenCV", "Machine Learning", "Face Recognition", "Real-time Processing"],
+      features: [
+        "Facial recognition for automated attendance",
+        "Real-time data updates for instant access",
+        "User-friendly interface for administrators and students",
+        "Detailed attendance reports for monitoring and analysis"
+      ],
       liveUrl: "#",
       githubUrl: "#",
-      category: "Full-Stack"
+      category: "AI/ML Project",
+      company: "Personal Project | Web Development & Automation"
     },
     {
-      title: "AI-Powered Analytics Dashboard",
-      description: "Modern analytics dashboard with AI insights, real-time data visualization, and predictive analytics capabilities.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-      technologies: ["React", "TypeScript", "Python", "TensorFlow", "D3.js"],
-      features: ["AI insights", "Real-time charts", "Predictive analytics", "Custom reports"],
+      title: "Real-time College Bus Tracking System", 
+      description: "Built a comprehensive bus tracking solution with GPS-based live location tracking, interactive maps, and cross-platform compatibility for enhanced commuter experience.",
+      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957",
+      technologies: ["Web Development", "GPS Integration", "Interactive Maps", "Responsive Design", "Real-time Systems"],
+      features: [
+        "GPS-based live bus tracking",
+        "Interactive map interface",
+        "Cross-platform compatibility", 
+        "Route visibility and timing optimization"
+      ],
       liveUrl: "#",
       githubUrl: "#",
-      category: "Data Visualization"
+      category: "Web Application",
+      company: "VALUELADIES | Jan 2024 - Feb 2024"
     },
     {
-      title: "Social Media Mobile App",
-      description: "Cross-platform mobile application for social networking with real-time messaging and content sharing.",
-      image: "https://images.unsplash.com/photo-1611262588024-d12430b98920",
-      technologies: ["React Native", "Firebase", "Node.js", "Socket.io"],
-      features: ["Real-time messaging", "Photo sharing", "Push notifications", "Social feeds"],
+      title: "Student Attendance Management System",
+      description: "Comprehensive attendance management solution with automated tracking, real-time updates, and detailed reporting capabilities for educational institutions.",
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+      technologies: ["Web Development", "Database Management", "Automation", "Reporting", "User Interface Design"],
+      features: [
+        "Automated attendance tracking system",
+        "Real-time data updates and synchronization",
+        "User-friendly interface for easy navigation",
+        "Detailed attendance reports and analytics"
+      ],
       liveUrl: "#",
       githubUrl: "#",
-      category: "Mobile App"
-    },
-    {
-      title: "Design System & Component Library",
-      description: "Comprehensive design system with reusable components, documentation, and design tokens for enterprise applications.",
-      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5",
-      technologies: ["React", "Storybook", "Figma", "TypeScript", "Sass"],
-      features: ["50+ Components", "Design tokens", "Documentation", "Theme support"],
-      liveUrl: "#",
-      githubUrl: "#",
-      category: "Design System"
-    },
-    {
-      title: "Real Estate Platform",
-      description: "Modern real estate platform with property listings, virtual tours, and mortgage calculator integration.",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa",
-      technologies: ["Next.js", "MongoDB", "Stripe", "Google Maps API"],
-      features: ["Property search", "Virtual tours", "Mortgage calculator", "Agent dashboard"],
-      liveUrl: "#",
-      githubUrl: "#",
-      category: "Web Application"
-    },
-    {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant healthcare platform for patient management, appointment scheduling, and telemedicine.",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f",
-      technologies: ["React", "Node.js", "PostgreSQL", "WebRTC", "AWS"],
-      features: ["Patient records", "Appointment scheduling", "Telemedicine", "HIPAA compliance"],
-      liveUrl: "#",
-      githubUrl: "#",
-      category: "Healthcare"
+      category: "Web Application",
+      company: "Personal Project | Web Development & Automation"
     }
   ];
 
@@ -76,11 +64,11 @@ export const Projects = () => {
             Featured <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A showcase of my recent work and technical capabilities
+            A showcase of my recent work in AI, web development, and automation
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden">
               <div className="relative overflow-hidden">
@@ -97,8 +85,11 @@ export const Projects = () => {
               
               <CardHeader>
                 <CardTitle className="text-xl mb-2">{project.title}</CardTitle>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed mb-2">
                   {project.description}
+                </p>
+                <p className="text-xs text-blue-600 font-medium">
+                  {project.company}
                 </p>
               </CardHeader>
               
